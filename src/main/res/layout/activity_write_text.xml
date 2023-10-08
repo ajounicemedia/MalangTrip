@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#000000"/>
+
+                <EditText
+                    android:id="@+id/ev_title"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="제목을 입력해주세요"
+                    android:layout_height="60dp"/>
+
+                <EditText
+                    android:id="@+id/ev_content"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:hint="내용을 입력해주세요"
+                    android:background="@android:color/transparent"
+                    android:layout_height="60dp"/>
+
+
+                <ImageView
+                    android:id="@+id/img_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                   />
+
+                <RadioGroup
+                    android:id="@+id/rg_choice_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rb_free">
+
+                    <RadioButton
+                        android:id="@+id/rb_free"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="자유게시판" />
+
+                    <RadioButton
+                        android:id="@+id/rb_passanger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="동행자 구해요 게시판" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_img_choice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="사진선택" />
+
+                <Button
+                    android:id="@+id/btn_input"
+                    android:text="입력"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_driver_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="택시 기사 자격증 증명"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_upload"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+
+        android:padding="0dp"
+        app:srcCompat="@drawable/upload_lisence" />
+
+
+
+    <TextView
+        android:id="@+id/tv_input_car_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자동차 정보 입력"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_car_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="차종"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/et_car_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="번호판"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/et_available_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="탑승 가능 인원 수"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/tv_available_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="활동 가능 지역 선택"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <Button
+        android:id="@+id/btn_select_local"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:backgroundTint="#D9D9D9"
+        android:text="지역 선택" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#D9D9D9"
+            android:text="취소"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#469EFF"
+            android:text="완료"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

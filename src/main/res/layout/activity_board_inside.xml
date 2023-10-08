@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/sv_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--        <NestedScrollView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_writer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="right"
+                        android:text="time" />
+
+                    <TextView
+                        android:id="@+id/tv_writing_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="right"
+                        android:text="time" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:text="여기는 내용 영역"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/iv_board_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:layout_marginTop="20dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <ListView
+                    android:id="@+id/lv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/commentLV"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:nestedScrollingEnabled="false"/>-->
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="댓글을 입력해주세요" />
+
+            <Button
+                android:id="@+id/btn_register_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록하기" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

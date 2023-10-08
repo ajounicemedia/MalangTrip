@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_chat"
+        android:icon="@drawable/chat"
+        android:title="말랑톡"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_community"
+        android:icon="@drawable/community"
+        android:title="커뮤니티"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/home"
+        android:title="홈"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/item_wishlist"
+        android:icon="@drawable/wishlist"
+        android:title="찜"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_myinfo"
+        android:icon="@drawable/myinfo"
+        android:title="내 정보"
+        app:showAsAction="always" />
+
+</menu>
